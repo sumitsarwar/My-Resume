@@ -1,0 +1,648 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul,
+ol {
+    list-style-type: none;
+}
+
+img {
+    border: 0;
+}
+
+/* Navbar css start */
+.navbar-brand {
+    color: white;
+    font-size: 30px;
+    font-weight: 700;
+    font-family: 'Ubuntu', sans-serif;
+    transition: all 0.3s ease;
+}
+
+.navbar-brand:hover {
+    text-decoration: none;
+    color: tomato;
+}
+
+.navbar-dsn {
+    color: tomato;
+}
+
+/* .navbar-nav .active>.nav-link {
+    color: tomato;
+} */
+
+.navbar-nav .nav-link:hover:after{
+    opacity: 1;
+}
+
+.navbar-nav .nav-link:hover, .navbar-light .navbar-nav .nav-link.active{
+    color:tomato;
+}
+
+.navbar-nav .nav-link.active:after{
+    opacity: 1;
+}
+.navbar .navbar-toggler-icon{
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+.nav-link {
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 700;
+    color: white;
+    position: relative;
+}
+
+.nav-link::after {
+    position: absolute;
+    content: '';
+    width: 75%;
+    height: 2px;
+    background-color: tomato;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    opacity: 0;
+}
+
+.nav-link:hover::after {
+    opacity: 1;
+}
+
+.navbar-nav .nav-link:focus{
+    color: tomato;
+}
+.navbar-light .navbar-nav .nav-link:hover {
+    color: tomato;
+}
+.nav-bg{
+	background-color: #444444;
+	box-shadow: 0 .1rem .3rem rgba(0,0,0,.3);
+	padding: .5rem 1rem;
+}
+.navbar {
+    position: fixed;
+    width: 100%;
+    z-index: 11;
+    transition: all 0.5s ease;
+  }
+/* Navbar css end */
+
+
+/* Banner Part start */
+#banner_part {
+    background-image: url(../images/banner.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vH;
+    position: relative;
+}
+.banner_text {
+	color: white;
+	padding: 45px 0px 45px 0px;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 300;
+    margin-top: 200px;
+}
+.banner_text h6{font-size: 27px;}
+.banner_text h2{
+    font-size: 75px;
+    font-weight: 600;
+    margin-left: -3px;
+}
+.banner_text h5{font-size: 40px;
+    margin: 5px 0;
+	font-weight: bold;
+}
+.banner_text a{
+    display: inline-block;
+    background-color: tomato;
+    color: #fff;
+    font-size: 25px;
+    padding: 12px 36px;
+    margin-top: 60px;
+    font-weight: 400;
+    border-radius: 6px;
+    border: 2px solid tomato;
+	font-family: 'Ubuntu', sans-serif;
+    transition: all 0.3s ease;
+
+}
+.banner_text a:hover {
+	color: tomato;
+	background: none;
+	text-decoration: none;
+}
+.about_right span, .banner_text span {
+	color: tomato;
+	font-family: 'Ubuntu', sans-serif;
+}
+
+/* Banner Part end */
+
+
+/* About part start */
+#about_part {
+	padding: 75px 0px;
+}
+.about_title {
+	font-size: 40px;
+	font-weight: 600;
+	color: black;
+	margin-bottom: 90px;
+	font-family: 'Ubuntu', sans-serif;
+	position: relative;
+}
+.about_title::before {
+	content: "";
+	position: absolute;
+	bottom: -28px;
+	left: 50%;
+	width: 250px;
+	height: 3px;
+	background: tomato;
+	transform: translateX(-50%);
+	border: 2px dashed;
+	border-color: #f8f8f8;
+}
+.about_title::after {
+	position: absolute;
+	bottom: -37px;
+	left: 50%;
+	font-size: 20px;
+	color: rgb(255, 255, 255);
+	padding: 0 10px;
+	background: tomato;
+	transform: translateX(-50%);
+	border-radius: 5px;
+}
+.about_title::after{
+    content: "Who i am";
+}
+.about_left img {
+	height: 400px;
+	width: 400px;
+	object-fit: cover;
+	border-radius: 6px;
+}
+.about_right {
+	margin-top: 15px;
+}
+.about_right h4 {
+	font-size: 30px;
+	font-weight: 700;
+	margin-bottom: 10px;
+	font-family: 'Ubuntu', sans-serif;
+}
+.about_right p {
+	text-align: justify;
+	font-size: 18px;
+	line-height: 28px;
+	color: black;
+	font-family: 'Ubuntu', sans-serif;
+}
+.about_right a{
+    display: inline-block;
+    background-color: tomato;
+    color: #fff;
+    font-size: 25px;
+    padding: 12px 36px;
+    margin-top: 35px;
+    font-weight: 400;
+    border-radius: 6px;
+    border: 2px solid tomato;
+	font-family: 'Ubuntu', sans-serif;
+    transition: all 0.3s ease;
+}
+.about_right a:hover{
+    color: tomato;
+	background: none;
+	text-decoration: none;
+}
+/* About part end */
+
+
+
+/* Service part start */
+#service_part {
+	padding: 65px 0px 90px 0px;
+	background: #eee;
+}
+.service_title {
+	font-size: 40px;
+	font-weight: 600;
+	color: black;
+	margin-bottom: 90px;
+	font-family: 'Ubuntu', sans-serif;
+	position: relative;
+}
+.service_title::before {
+	content: "";
+	position: absolute;
+	bottom: -28px;
+	left: 50%;
+	width: 525px;
+	height: 3px;
+	background: tomato;
+	transform: translateX(-50%);
+	border: 2px dashed;
+	border-color: #eee;
+}
+.service_title::after {
+	position: absolute;
+	bottom: -37px;
+	left: 50%;
+	font-size: 20px;
+	color: rgb(255, 255, 255);
+	padding: 0 10px;
+	background: tomato;
+	transform: translateX(-50%);
+	border-radius: 5px;
+}
+.service_title::after{
+    content: "Awesome & Creative Services For You";
+}
+.service_card_body{
+    margin-bottom: 10px;
+}
+.service_card_body h3 {
+	font-size: 25px;
+	color: tomato;
+	font-weight: 700;
+	font-family: 'Ubuntu', sans-serif;
+
+}
+.service_card_body h6{
+    font-size: 14px;
+	color: #acacac;
+	font-weight: 400;
+}
+.service_card_body p {
+	font-size: 16px;
+	color: #6F7488;
+	font-weight: 500;
+	line-height: 22px;
+	margin-bottom: 30px;
+	font-family: 'Ubuntu', sans-serif;
+	text-align: justify;
+}
+.service_card_body a {
+	display: inline-block;
+	background-color: tomato;
+	color: #fff;
+	font-size: 20px;
+	padding: 5px 15px;
+	font-weight: 500;
+	border-radius: 6px;
+	border: 2px solid tomato;
+	font-family: 'Ubuntu', sans-serif;
+	transition: all 0.3s ease;
+}
+.service_card_body a:hover{
+    color: tomato;
+	background: none;
+	text-decoration: none;
+}
+.service_part_bottom .card img{
+	height: 280px;
+}
+.service_slick_slider .slick-dots {
+	list-style: none;
+	text-align: center;
+	margin: 0 auto;
+	position: absolute;
+	left: 50%;
+    bottom: -10%;
+	transform: translate(-50%);
+}
+.service_slick_slider .slick-dots li {
+	display: inline-block;
+	margin-right: 10px;
+	width: 35px;
+	height: 8px;
+	line-height: 10px;
+	background: black;
+}
+.service_slick_slider .slick-dots li button {
+	color: transparent;
+	width: 35px;
+	height: 8px;
+	line-height: 15px;
+	background: tomato;
+	border: none;
+	opacity: 0;
+}
+.service_slick_slider .slick-dots li.slick-active button{
+    opacity: 1;
+}
+/* Service part end */
+
+
+
+/* Skills part start */
+#skills_part {
+	background: #7d7d7d;
+	padding: 60px 0px;
+}
+.skills_title {
+	font-size: 40px;
+	font-weight: 600;
+	color: white;
+	margin-bottom: 90px;
+	font-family: 'Ubuntu', sans-serif;
+	position: relative;
+}
+
+.skills_title::before {
+	content: "";
+	position: absolute;
+	bottom: -28px;
+	left: 50%;
+	width: 290px;
+	height: 3px;
+	background: tomato;
+	transform: translateX(-50%);
+	border: 2px dashed;
+	border-color: #7d7d7d;
+}
+.skills_title::after{
+	content: "What i know";
+	position: absolute;
+	bottom: -37px;
+	left: 50%;
+	font-size: 20px;
+	color: rgb(255, 255, 255);
+	padding: 0 10px;
+	background: tomato;
+	transform: translateX(-50%);
+	border-radius: 5px;
+}
+.skills_left {
+	margin-right: 20px;
+}
+.skills_left h2 {
+	font-size: 30px;
+	font-weight: 700;
+	margin-bottom: 22px;
+	color: white;
+	font-family: 'Ubuntu', sans-serif;
+}
+.skills_left p {
+	text-align: justify;
+	font-size: 18px;
+	line-height: 25px;
+	margin-bottom: 30px;
+	color: #fff;
+	font-family: 'Ubuntu', sans-serif;
+}
+.skills_left a {
+	display: inline-block;
+	background-color: tomato;
+	color: #fff;
+	font-size: 22px;
+	padding: 5px 20px;
+	margin-top: 15px;
+	font-weight: 500;
+	border-radius: 6px;
+	border: 2px solid tomato;
+	font-family: 'Ubuntu', sans-serif;
+	transition: all 0.3s ease;
+}
+.skills_left a:hover{
+	color: tomato;
+	background: none;
+	text-decoration: none;
+}
+.skills_right {
+	margin-left: 20px;
+}
+.skills_right h1 {
+	font-size: 16px;
+	font-weight: 700;
+	color: white;
+	font-family: 'Ubuntu', sans-serif;
+}
+.skills_right .progress {
+	margin-bottom: 16px;
+	font-size: 15px;
+	background-color: #c5c5c5;
+	border-radius: 5px;
+}
+/* Skills part end */
+
+
+
+/* Team part start */
+#team_part {
+	padding: 50px 0px;
+	background: #111;
+}
+.team_title {
+	font-size: 40px;
+	font-weight: 600;
+	color: white;
+	margin-bottom: 90px;
+	font-family: 'Ubuntu', sans-serif;
+	position: relative;
+}
+.team_title::before {
+	content: "";
+	position: absolute;
+	bottom: -28px;
+	left: 50%;
+	width: 292px;
+	height: 3px;
+	background: tomato;
+	transform: translateX(-50%);
+	border: 2px dashed;
+	border-color: #111;
+}
+.team_title::after{
+	content: "Who with me";
+	position: absolute;
+	bottom: -37px;
+	left: 50%;
+	font-size: 20px;
+	color: rgb(255, 255, 255);
+	padding: 0 10px;
+	background: tomato;
+	transform: translateX(-50%);
+	border-radius: 5px;
+}
+.team_part_bottom .card img {
+	height: 150px;
+	width: 150px;
+	object-fit: cover;
+	border-radius: 50%;
+	border: 5px solid tomato;
+	transition: all 0.3s ease;
+}
+.team_part_bottom .card:hover img{
+    border-color: #fff;
+
+}
+.team_part_bottom .card:hover{
+	background-color: tomato;
+}
+.team_part_bottom .card {
+	background: #222;
+	border-radius: 6px;
+	padding: 25px 35px;
+	text-align: center;
+	overflow: hidden;
+	transition: all 0.3s ease;
+}
+#team_part {
+	padding: 75px 0px 50px;
+	background: #111;
+}
+.team_part_bottom .card .box{
+	display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+.team_part_bottom .card:hover .box{
+	transform: scale(1.05);
+}
+.team_part_bottom .card .text {
+	font-size: 25px;
+	font-weight: 500;
+	margin: 10px 0 7px 0;
+	color: white;
+	font-family: 'Ubuntu', sans-serif;
+}
+
+.team_part_bottom .card p {
+	color: white;
+	font-family: 'Ubuntu', sans-serif;
+}
+/* Team part end */
+
+
+/* Contact part start */
+#contact_part {
+	padding: 65px 0px;
+	position: relative;
+	margin-top: 50px;
+}
+#contact_part::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background: linear-gradient(340deg, tomato 55%, #fff 0%);
+	z-index: -10;
+}
+.contact_title {
+	font-size: 40px;
+	font-weight: 600;
+	color: black;
+	margin-bottom: 90px;
+	font-family: 'Ubuntu', sans-serif;
+	position: relative;
+}
+.contact_title::before {
+	content: "";
+	position: absolute;
+	height: 3px;
+	width: 275px;
+	background: #fff;
+	left: 50%;
+	top: 75px;
+	transform: translate(-50%, -50%);
+	border: 2px dashed;
+	border-color: tomato;
+}
+.contact_title::after {
+	content: "Get in touch";
+	position: absolute;
+	left: 50%;
+	top: 75px;
+	font-size: 20px;
+	color: white;
+	background: tomato;
+	padding: 0px 10px;
+	border-radius: 5px;
+	transform: translate(-50%, -50%);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+::placeholder{
+    font-size: 0.85rem;
+}
+.button_dsn button {
+	border: 2px solid tomato;
+	border-radius: 100px;
+	margin: 0 5px;
+	padding: 12px 35px;
+	outline: 0;
+	color: tomato;
+	font-size: 20px;
+	font-weight: 600;
+	text-align: center;
+	background: white;
+	font-family: 'Ubuntu', sans-serif;
+}
+.button_dsn button:hover{
+     color: #4a09e0;
+}
+form:hover .button_dsn button{
+    background: tomato;
+    color: white;
+    box-shadow: 0 0 20px 0 rgba(0,0,0,0.3);
+	border-color: white;
+
+}
+/*Contact part end*/
+
+
+/* footer part start */
+#footer_part {
+	background-color: black;
+	padding: 20px 0px;
+}
+.footer_file a{
+	text-decoration: none;}
+.footer_file span {
+	color: #ff6c00;
+	font-size: 18px;
+}
+.footer_file h4 {
+	color: white;
+	font-size: 16px;
+	text-align: center;
+}
+
+/* footer part end */
+

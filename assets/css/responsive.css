@@ -1,0 +1,274 @@
+/* Extra small device (portrait phones, less than 576) */
+@media (max-width: 575.98px) { 
+    #banner_part {
+        height: 630px;
+        text-align: center;
+    }
+    .navbar-nav .nav-link {
+        text-align: center;
+    }
+    .navbar-nav .nav-link::after {
+        width: 13%;
+    }
+    .navbar-nav {
+        background: #373737;
+    }
+    .banner_text {
+        margin-top: 100px;
+    }
+    .about_left{
+        text-align: center;
+    }
+    .about_left img {
+        width: 420px;
+    }
+    .about_right p {
+        margin: 20px;
+    }
+    .about_right h4 {
+        margin: 20px;
+    }
+    .about_right a {
+        display: flex;
+        justify-content: center;
+    }
+    .service_title::after {
+        bottom: -95px;
+    }
+    .service_title::before {
+        bottom: -75px;
+    }
+    #service_part {
+        padding: 35px 0px 90px 0px;
+    }
+    .service_title {
+        margin-bottom: 140px;
+    }
+    .service_card_body h3 {
+        text-align: center;
+    }
+    .service_card_body h6 {
+        text-align: center;
+    }
+    
+    .service_card_body a{
+        display: flex;
+        justify-content: center;
+    }
+    .service_card_body p {
+        display: flex;
+        text-align: center;
+    }
+    .skills_left h2 {
+        text-align: center;
+    }
+    .skills_left p {
+        text-align: center;
+    }
+    .skills_left a {
+        display: flex;
+        justify-content: center;
+        margin: 50px 0px;
+    }
+    
+ }
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width:576px) and (max-width: 767.98px) {
+    .navbar-nav .nav-link {
+        text-align: center;
+    }
+    .navbar-nav .nav-link::after {
+        width: 13%;
+    }
+    .navbar-nav {
+        background: #373737;
+    }
+    .banner_text {
+        margin-top: 80px;
+        text-align: center;
+    }
+    .about_left{
+        text-align: center;
+    }
+    .about_left img {
+        height: 100%;
+        width: 100%;
+    }
+    .about_right h4 {
+        text-align: center;
+        margin-top: 1.5rem;
+    }
+    .about_right p {
+        margin-top: 1rem;
+    }
+    .about_right a {
+        display: flex;
+        justify-content: center;
+    }
+    .service_title::before {
+        bottom: -50px;
+    }
+    .service_title::after {
+        bottom: -70px;
+    }
+    .service_title {
+        margin-bottom: 7rem;
+    }
+    .service_card_body h3 {
+        font-size: 2rem;
+        text-align: center;
+    }
+    .service_card_body h6 {
+        color: #6f6767;
+        font-size: 1rem;
+        text-align: center;
+    }
+    .service_card_body a {
+        display: flex;
+        justify-content: center;
+    }
+    .skills_left h2 {
+        text-align: center;
+    }
+    .skills_left a {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 4rem;
+    }
+    
+}
+
+
+
+
+
+
+/* Medium devices (tablests, 768px and up)*/
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .navbar-nav .nav-link {
+        text-align: center;
+    }
+    .navbar-nav .nav-link::after {
+        width: 13%;
+    }
+    .navbar-nav {
+        background: #373737;
+    }
+    .navbar-nv .navbar-toggler-icon{
+        color: red;
+    }
+    .banner_text {
+        margin-top: 80px;
+    }
+    .about_left{
+        text-align: center;
+    }
+    .about_left img {
+        height: 100%;
+        width: 100%;
+    }
+    .about_right h4 {
+        margin-top: 2.2rem;
+    }
+    .about_right a {
+        display: flex;
+        width: 35%;
+        justify-content: center;
+        margin: 0 auto;
+    }
+    .about_right p {
+        font-size: 1.1rem;
+        line-height: 2.2rem;
+        margin: 2rem 0rem;
+    }
+    .service_title {
+        margin-bottom: 6.5rem;
+    }
+    .service_title::before {
+        bottom: -3.4rem;
+    }
+    .service_title::after {
+        bottom: -4.7rem;
+    }
+    .service_card_body {
+        text-align: center;
+    }
+    .service_card_body a{
+        display: flex;
+        justify-content: center;
+    }
+    .skills_title::before {
+        bottom: -3rem;
+    }
+    .skills_title::after {
+        bottom: -4rem;
+        padding: 0.6rem 1rem;
+    }
+    .skills_left a {
+        display: flex;
+        justify-content: center;
+        width: 35%;
+        margin: 0 auto;
+        margin-bottom: 2rem;
+    }
+    .skills_left p {
+        margin-bottom: 2.5rem;
+    }
+    .skills_right {
+        margin-left: 0;
+    }
+    .team_title {
+        margin-bottom: 8rem;
+    }
+    .team_title::before {
+        bottom: -3.5rem;
+        width: 360px;
+    }
+    .team_title::after {
+        bottom: -4.5rem;
+        padding: .6rem 1rem;
+    }
+}
+
+
+/* Large devices (desktops, 992px and up)*/
+@media (min-width:992px) and (max-width: 1199.98px) {
+    .banner_text {
+        margin-top: 5rem;
+    }
+    .service_title::before {
+        bottom: -2.4rem;
+    }
+    .service_title::after {
+        bottom: -3.3rem;
+        padding: 0.5rem 0.8rem;
+    }
+    .skills_title::before {
+        bottom: -3rem;
+    }
+    .skills_title::after {
+        bottom: -4rem;
+        padding: 0.6rem 0.8rem;
+    }
+    .skills_title {
+        margin-bottom: 6rem;
+    }
+    .skills_left h2 {
+        font-size: 1.7rem;
+    }
+    .skills_left p {
+        line-height: 2.1rem;
+    }
+    .skills_left a {
+        display: flex;
+        justify-content: center;
+    }
+    .skills_right {
+        padding-bottom: 1.3rem;
+    }
+}
+
+
+/*Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) {...}
